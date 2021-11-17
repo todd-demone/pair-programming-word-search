@@ -2,8 +2,9 @@
 const wordSearch = (letters, word) => {
   // if letters is an empty array, then return undefined
   if (letters.length === 0) return undefined;
-
+  // convert each row of letters into a single string
   const horizontalLetters = letters.map(ls => ls.join(''));
+  // convert each column of letters into a single string
   const verticalLetters = transpose(letters).map(ls => ls.join(''));
 
   return isWordPresentInArrayOfStrings(horizontalLetters, word) || isWordPresentInArrayOfStrings(verticalLetters, word);
