@@ -1,8 +1,8 @@
 // should find word if written horizontally and vertically
 const wordSearch = (letters, word) => {
-  // if letters is a empty array, then return undefined
+  // if letters is an empty array, then return undefined
   if (letters.length === 0) return undefined;
-  
+
   const horizontalLetters = letters.map(ls => ls.join(''));
   const verticalLetters = transpose(letters).map(ls => ls.join(''));
 
