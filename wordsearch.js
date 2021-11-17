@@ -6,7 +6,7 @@ const wordSearch = (letters, word) => {
   const horizontalLetters = letters.map(ls => ls.join(''));
   const verticalLetters = transpose(letters).map(ls => ls.join(''));
 
-  return isWordPresentInArrayOfStrings(horizontalLetters, word) || isWordPresentInArrayOfStrings(verticalLetters, word) ? true : false;
+  return isWordPresentInArrayOfStrings(horizontalLetters, word) || isWordPresentInArrayOfStrings(verticalLetters, word);
 };
 
 // helper function - for finding words written vertically
