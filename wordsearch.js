@@ -23,7 +23,7 @@ const transpose = function(matrix) {
   return newArray;
 };
 
-// helper function - search array of strings for the given word and return true or false, accordingly
+// helper function - search an array of strings for the given word and return true or false, accordingly
 const isWordPresentInArrayOfStrings = function(array, word) {
   for (const string of array) {
     if (string.includes(word)) return true;
